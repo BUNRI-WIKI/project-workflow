@@ -33,7 +33,7 @@ NOW_TIME = datetime.now().strftime("%y%m%d")
 @dag(
     dag_id="midas_dag", 
     schedule_interval="@daily",
-    start_date=datetime(2024, 10, 1),
+    start_date=datetime(2024, 5, 1),
     catchup=False,
 )
 def midas_dag():

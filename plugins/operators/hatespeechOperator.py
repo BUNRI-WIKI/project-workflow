@@ -8,7 +8,7 @@ class HateSpeechOperator(BaseOperator):
     def execute(self, context):
         import pandas as pd
 
-        from hooks.aws_rds_hook import AWSRDSHook
+        from plugins.hooks.aws_rds_hook import AWSRDSHook
     
         rds_hook = AWSRDSHook(self._conn_id)
         rds_conn, rds_cur = rds_hook.get_conn()
